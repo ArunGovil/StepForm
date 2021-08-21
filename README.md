@@ -2,7 +2,7 @@
 Follow these steps to run localy
 
 ### Clone the Repo
-### `git clone https://github.com/ArunGovil/multi-step-form`
+`git clone https://github.com/ArunGovil/multi-step-form`
 
 ### `cd [cloned repo]`
 
