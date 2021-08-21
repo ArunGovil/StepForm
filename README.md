@@ -1,6 +1,6 @@
-# A Simple Multi Step Form using React
+# A Simple Multi Step Form using React 🔯️
 
-### Follow the steps to run the App on your local machine
+### Follow the steps to run the App on your local machine 
 
 Open your terminal and clone the repository.
 
@@ -14,6 +14,6 @@ To install all dependenices, run the following command.
 
 `npm install`
 
-The project is ready to run, lets go!
+The project is ready to run, launch the localhost server right away!
 
 `npm start`
