@@ -4,10 +4,17 @@ Follow these steps to run localy
 ### Clone the Repo
 
 Open your terminal and clone the repository.
+
 `git clone https://github.com/ArunGovil/multi-step-form`
 
-### `cd [cloned repo]`
+Once you have the repo in your local machine, cd into the folder.
 
-### `npm install`
+`cd [cloned repo]`
 
-### `npm start`
+To install all dependenices, run the following command.
+
+`npm install`
+
+The project is ready to run, lets go!
+
+`npm start`
