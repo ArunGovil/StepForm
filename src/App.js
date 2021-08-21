@@ -1,9 +1,10 @@
 import React from 'react';
+import StepForm from './components/StepForm';
 
 const App = () => {
   return (
     <div>
-      <p>Hello react!</p>
+      <StepForm />
     </div>
   );
 };
