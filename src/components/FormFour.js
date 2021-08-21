@@ -13,7 +13,10 @@ const FormFour = () => {
                     <input className="formInput" type="text" placeholder="Date of Birth" required/>
                     <input className="formInput" type="text" placeholder="License Issue" required/>
                     <input className="formInput" type="text" placeholder="Company Name" onChange={e => updateContext.setCompany(e.target.value)} required/>
-                    <button className="formSubmit" value="Next" type="submit" onClick={() => updateContext.setStep(updateContext.currentPage + 1)}>Next </button>
+                    <div className="multipleButtons">
+                    <button className="multipleButton" value="Previous" type="submit" onClick={() => updateContext.setStep(updateContext.currentPage - 1)}>Previous </button>
+                    <button className="multipleButton" value="Next" type="submit" onClick={() => updateContext.setStep(updateContext.currentPage + 1)}>Next </button>
+                    </div>
                 </form>
             </div>
         </div>

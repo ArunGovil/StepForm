@@ -68,6 +68,19 @@
     margin-bottom: 10px;
     padding: 10px;
 }
+.multipleButtons {
+    padding: 10px;
+    align-self: flex-end;
+}
+.multipleButton {
+    margin-right: 5px;
+    border-radius: 5px;
+     color: #03045e;
+     padding: 8px;
+     border-style: solid;
+     border-color: #03045e;
+     width: 75px;
+}
 
 .done {
     width: 65px;
