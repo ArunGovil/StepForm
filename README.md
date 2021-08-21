@@ -1,7 +1,6 @@
 # A Simple Multi Step Form using React
-Follow these steps to run localy
 
-### Clone the Repo
+### Follow the steps to run the App on your local machine
 
 Open your terminal and clone the repository.
 
