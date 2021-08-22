@@ -8,13 +8,13 @@ const FormThree = () => {
 
     const next = () => {
         if (updateContext.vehBrand == null) {
-            console.log('Brand cannot be empty')
+            console.log('Please select the Brand')
         } else if (updateContext.userVehicle == null) {
-            console.log('Vehicle cannot be empty')
+            console.log('Please select your Vehicle')
         } else if (updateContext.vehYear == null) {
-            console.log('Year cannot be empty')
+            console.log('Please enter the Year')
         } else if (updateContext.vehValue == null) {
-            console.log('Year cannot be empty')
+            console.log('Enter the value of your Car')
         } else (updateContext.setStep(updateContext.currentPage + 1))
     };
 
