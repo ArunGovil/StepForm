@@ -5,6 +5,12 @@ import './styles.css'
 const FormTwo = () => {
     const myContext = useContext(AppContext);
     const updateContext = myContext.userDetails;
+
+    const next = () => {
+        if (updateContext.userOTP == null) {
+            console.log('OTP cannot be empty')
+        } else (updateContext.setStep(updateContext.currentPage + 1))
+    };
     
     return (
         <div className="container">
@@ -13,7 +19,7 @@ const FormTwo = () => {
             <div className="formContain">
                 <form className="form">
                     <input className="formInput" type="text" placeholder="Enter OTP" onChange={e => updateContext.setOTP(e.target.value)} required/>
-                    <button className="formSubmit" value="Next" type="submit" onClick={() => updateContext.setStep(updateContext.currentPage + 1)}>Next </button>
+                    <button className="formSubmit" value="Next" type="submit" onClick={next}>Next </button>
                 </form>
             </div>
         </div>

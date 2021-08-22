@@ -5,6 +5,11 @@ import './styles.css';
 const FormThree = () => {
     const myContext = useContext(AppContext);
     const updateContext = myContext.userDetails;
+
+    const next = () => {
+        (updateContext.setStep(updateContext.currentPage + 1))
+    };
+
     return (
         <div className="container">
             <p>Enter your vehicle details</p>
@@ -34,7 +39,7 @@ const FormThree = () => {
                     </select>
                     </label>
                     <input className="formInput" type="text" placeholder="Vehicle Value" />
-                    <button className="formSubmit" value="Next" type="submit" onClick={() => updateContext.setStep(updateContext.currentPage + 1)}>Next </button>
+                    <button className="formSubmit" value="Next" onClick={next}>Next </button>
                 </form>
             </div>
         </div>

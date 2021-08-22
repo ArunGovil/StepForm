@@ -11,17 +11,17 @@ import ProgressBar from './ProgressBar';
 const StepForm = () => {
 
     const [step, setStep] = useState(0);
-    const [name, setName] = useState('Tester John');
-    const [email, setEmail] = useState('test@test.com');
-    const [phone, setPhone] = useState('12345678');
-    const [otp, setOTP] = useState(1234);
-    const [brand, setBrand] = useState('test-brand');
-    const [model, setModel] = useState('test-car');
-    const [year, setYear] = useState('2000');
-    const [value, setValue] = useState(250);
-    const [dob, setDOB] = useState(1998);
-    const [issue, setIssue] = useState(1999);
-    const [company, setCompany] = useState('sample-company');
+    const [name, setName] = useState(null);
+    const [email, setEmail] = useState(null);
+    const [phone, setPhone] = useState(null);
+    const [otp, setOTP] = useState(null);
+    const [brand, setBrand] = useState(null);
+    const [model, setModel] = useState(null);
+    const [year, setYear] = useState(null);
+    const [value, setValue] = useState(null);
+    const [dob, setDOB] = useState(null);
+    const [issue, setIssue] = useState(null);
+    const [company, setCompany] = useState(null);
 
     const userDetails = {
         currentPage: step,
