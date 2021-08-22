@@ -1,5 +1,7 @@
 # A Simple Multi Step Form using React 🔯️
 
+![](demo.gif)
+
 ### Follow the steps to run the App on your local machine 
 
 Open your terminal and clone the repository.
