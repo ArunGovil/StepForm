@@ -26,15 +26,17 @@ const FormThree = () => {
                     <label>
                     <select className="formSelect" onChange={e => updateContext.setBrand(e.target.value)} >
                         <option >Select Brand</option>
-                        <option value="tesla">Tesla Motors</option>
+                        <option value="tesla">Tesla</option>
                         <option value="ford">Ford</option>
+                        <option value="tata">Tata</option>
                     </select>
                     </label>
                     <label>
                     <select className="formSelect" onChange={e => updateContext.setModel(e.target.value)} >
                         <option>Vehicle Model</option>
-                        <option value="type-one">Type One</option>
                         <option value="model-x">Model X</option>
+                        <option value="model-y">Model Y</option>
+                        <option value="model-z">Model Z</option>
                     </select>
                     </label>
                     <label>
