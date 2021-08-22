@@ -7,7 +7,15 @@ const FormThree = () => {
     const updateContext = myContext.userDetails;
 
     const next = () => {
-        (updateContext.setStep(updateContext.currentPage + 1))
+        if (updateContext.vehBrand == null) {
+            console.log('Brand cannot be empty')
+        } else if (updateContext.userVehicle == null) {
+            console.log('Vehicle cannot be empty')
+        } else if (updateContext.vehYear == null) {
+            console.log('Year cannot be empty')
+        } else if (updateContext.vehValue == null) {
+            console.log('Year cannot be empty')
+        } else (updateContext.setStep(updateContext.currentPage + 1))
     };
 
     return (
@@ -16,7 +24,7 @@ const FormThree = () => {
             <div className="formContainer">
                 <form className="form">
                     <label>
-                    <select className="formSelect" onChange={e => updateContext.setBrand(e.target.value)}>
+                    <select className="formSelect" onChange={e => updateContext.setBrand(e.target.value)} >
                         <option >Select Brand</option>
                         <option value="tesla">Tesla Motors</option>
                         <option value="ford">Ford</option>
@@ -38,8 +46,8 @@ const FormThree = () => {
                         <option value="2002">2002</option>
                     </select>
                     </label>
-                    <input className="formInput" type="text" placeholder="Vehicle Value" />
-                    <button className="formSubmit" value="Next" onClick={next}>Next </button>
+                    <input className="formInput" type="text" placeholder="Vehicle Value" onChange={e => updateContext.setValue(e.target.value)} />
+                    <button type="button" className="formSubmit" onClick={next}>Next </button>
                 </form>
             </div>
         </div>
